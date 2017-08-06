@@ -107,13 +107,15 @@ std::string Base64::decode(std::string input)
     }
 
     std::string bin;
+
     for(int i = 0; i < input.size(); i++)
     {
         std::bitset<6> b(indexof(table, input[i]));
 
         bin += b.to_string();
+        
     }
-
+    
 
     // Clean up padding if necessary
     if(equal_sign_count > 0)
@@ -133,7 +135,7 @@ std::string Base64::decode(std::string input)
             buffer += bin[i + (loopcount * 8)];
         }
 
-
+        
         result += (char) (std::stoi(buffer, 0, 2));
 
         // Clear buffer
