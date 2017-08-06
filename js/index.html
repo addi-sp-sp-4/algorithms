@@ -3,11 +3,42 @@
 <html>
 
     <head>
+        <title>Base64 encoding and decoding </title>
         <script src='./base64.js'> </script>
     </head>
+    
+    <style>
+    
+    input {
+        height: 10%;
+        width: 10%;
+
+    }
+    
+    </style>
 
     <body>
-
+        <div style="width: 50%; height: 500px; margin: 0 auto;">
+            <textarea id="text" style="width: 100%; height: 100%;" cols=""> </textarea>
+            <br>
+            <input type="button" value="Encode" id="encode"/>
+            <input type="button" value="Decode" style="float: right;" id="decode"/>
+            <br>
+        </div>
+        
+        
+        <script>
+            var textarea = document.getElementById('text');
+            
+            document.getElementById("encode").onclick = function() {
+                textarea.value = base64Encode(textarea.value);
+            }
+            
+            document.getElementById("decode").onclick = function() {
+                textarea.value = base64Decode(textarea.value);
+            }
+        
+        </script>
     </body>
 
 </html>
