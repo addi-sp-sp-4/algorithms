@@ -15,7 +15,6 @@ function txt2Bin(text, delimiter = "") {
   } 
   return output.join(delimiter);
 }
-0011001000110100
 function amountOfSubStringsInString(needle, haystack) {
     
     
