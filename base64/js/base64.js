@@ -107,7 +107,6 @@ function base64Decode(input) {
         for(var j = 0; j < segment.length % 6; j++) {
             segment = "0" + segment;
         }
-        console.log(index, segment.length, segment);
         binary += segment;
     }
     // Remove padding if necessary
@@ -115,9 +114,6 @@ function base64Decode(input) {
     if(padding != 0) {
         binary = binary.slice(0, binary.length - padding);
     }
-    
-    console.log(binary);
-    
     
     result = "";
     // Split in groups of 8
@@ -128,49 +124,7 @@ function base64Decode(input) {
         result += String.fromCharCode(parseInt(binaryArr[i], 2));
     }
     return result;
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
