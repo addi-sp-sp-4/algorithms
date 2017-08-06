@@ -7,6 +7,7 @@ All algorithms in this repository as of now, with the language(s) they are imple
 1. Base64 Encoding and Decoding: Located in /base64.
 
 ..* C++
+
 ..* JavaScript
 
 
