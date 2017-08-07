@@ -1,4 +1,3 @@
-
 def bubblesort(unsorted, first="lowest"):
 
 	completed_elements = 0
@@ -6,7 +5,7 @@ def bubblesort(unsorted, first="lowest"):
 
 	while True:
 
-		if completed_elements >= len(unsorted):
+		if completed_elements >= length;
 			break
 
 		for index in range(length - completed_elements - 1):
