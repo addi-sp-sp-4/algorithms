@@ -4,7 +4,7 @@ This is a repositiory consisting of all algorithms I made/recreated. Everything 
 
 All algorithms in this repo as of now, with the language(s) they are implemented in
 
-### Base64: location: /base64:
+### Base64: (location: /base64)
 
   * C++
   
